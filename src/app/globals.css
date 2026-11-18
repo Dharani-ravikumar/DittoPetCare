@@ -1,0 +1,105 @@
+
+@import "tailwindcss";
+
+:root {
+  --ice-blue: #eaf6fc;
+  --soft-blue: #d5eaf6;
+  --deep-blue: #29485e;
+  --light-text: #647b8c;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--white);
+  color: var(--deep-blue);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+::selection {
+  background: #c5e5f5;
+  color: #29485e;
+}
+
+.container-shell {
+  width: min(1180px, 90%);
+  margin-inline: auto;
+}
+
+/* Floating hero image */
+
+@keyframes floatPet {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-13px);
+  }
+}
+
+.float-pet {
+  animation: floatPet 4s ease-in-out infinite;
+}
+
+/* Floating decorative circles */
+
+@keyframes floatDecor {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(8deg);
+  }
+}
+
+.float-decor {
+  animation: floatDecor 5s ease-in-out infinite;
+}
+
+/* Scroll reveal */
+
+.reveal {
+  animation: revealUp 0.8s ease both;
+}
+
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Image hover */
+
+.pet-image {
+  transition: transform 0.5s ease;
+}
+
+.pet-image:hover {
+  transform: scale(1.06);
+}
+
+/* Selection and focus */
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #83b9d8;
+  outline-offset: 4px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
