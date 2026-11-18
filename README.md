@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # DittoPetCare – Pet Care & E-Commerce Website
 
 DittoPetCare is a responsive pet care and e-commerce website designed to provide pet owners with a convenient platform to explore pet products, discover pet care services, book appointments, and manage their shopping experience.
@@ -192,4 +192,4 @@ The main objective of DittoPetCare is to create a user-friendly digital platform
 =======
 # DittoPetCare
 A responsive pet care website built with Next.js, React, and Tailwind CSS, offering pet products, services, health guidance, grooming, nutrition, and wellness information.
->>>>>>> 0b9fa1343dd12431f479a69a184560f84d45cc89
+
