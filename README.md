@@ -74,41 +74,101 @@ The website provides different pet care services:
 ## Project Structure
 
 ```text
-dittopetcare/
+DittoPetCare/
 │
 ├── public/
 │   └── images/
+│       ├── about/
+│       ├── homepages/
+│       │   ├── products/
+│       │   └── services/
 │       ├── products/
-│       ├── services/
-│       └── banners/
+│       │   ├── clean-care/
+│       │   ├── comfot/
+│       │   ├── feeding/
+│       │   ├── toy/
+│       │   └── walking-safety/
+│       └── services/
+│           ├── grooming/
+│           ├── spa/
+│           ├── traning/
+│           └── veterinary/
 │
 ├── src/
+│   │
+│   ├── AllServices/
+│   │   ├── AllServices..jsx
+│   │   ├── BoardingTraining.jsx
+│   │   ├── GroomingHygiene.jsx
+│   │   ├── NutritionPetSpa.jsx
+│   │   └── VeterinaryHealth.jsx
+│   │
 │   ├── app/
 │   │   ├── about/
+│   │   ├── AllServices/
 │   │   ├── booking/
 │   │   ├── checkout/
 │   │   ├── contact/
 │   │   ├── product/
+│   │   │   └── [slug]/
 │   │   ├── products/
-│   │   ├── services/
+│   │   │   └── [category]/
+│   │   │       └── [product]/
+│   │   ├── service/
+│   │   │   ├── all/
+│   │   │   ├── BoardingTraining/
+│   │   │   ├── grooming-hygiene/
+│   │   │   ├── nutrition-pet-spa/
+│   │   │   └── veterinary-health/
+│   │   ├── service-details/
+│   │   │   └── [slug]/
+│   │   ├── why-pet-care-matters/
+│   │   ├── favicon.ico
+│   │   ├── globals.css
 │   │   ├── layout.js
 │   │   └── page.js
 │   │
 │   ├── components/
-│   │   ├── Navbar.jsx
+│   │   ├── BookingSection.jsx
 │   │   ├── CartDrawer.jsx
-│   │   ├── WishlistDrawer.jsx
-│   │   └── Proceed.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Proceed.jsx
+│   │   ├── ServiceCategoryNavigation.jsx
+│   │   └── WishlistDrawer.jsx
 │   │
 │   ├── data/
+│   │   ├── allServices.js
+│   │   ├── products.js
+│   │   ├── serviceData.js
 │   │   └── products/
+│   │       ├── clean-care/
+│   │       ├── comfort-sleep/
+│   │       ├── feeding-hydration/
+│   │       ├── toys/
+│   │       └── walking-safety/
 │   │
-│   ├── Allproducts/
-│   ├── AllServices/
 │   └── homepage/
+│       ├── AboutSection.jsx
+│       ├── ChooseUs.jsx
+│       ├── HeroSection.jsx
+│       ├── ProductSection.jsx
+│       └── ServicesSection.jsx
 │
 ├── package.json
-└── README.md
+├── package-lock.json
+├── next.config.mjs
+└── jsconfig.json
+```
+
+### 📌 Main Directories
+
+- **public/images:** Stores website images for products, services, and homepage sections.
+- **src/app:** Contains Next.js pages and application routes.
+- **src/components:** Reusable UI components such as Navbar, Footer, Cart, and Wishlist.
+- **src/AllServices:** Contains service category components.
+- **src/data:** Stores product and service information.
+- **src/homepage:** Contains homepage sections such as Hero, About, Products, and Services.
 ```
 
 ## Installation and Setup
